@@ -4,4 +4,4 @@ This is a anchor smart contract to create and mint from token faucets. It is int
 
 ## Usage 
 
-Check out the tests or app folders for examples or visit the (limitles-token-faucet-api-ts)[https://github.com/limitless-devs/limitless-token-faucet-api-ts] repository for a full example. 
+Check out the tests or app folders for examples or visit the [limitles-token-faucet-api-ts](https://github.com/limitless-devs/limitless-token-faucet-api-ts) repository for a full example. 
