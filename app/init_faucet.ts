@@ -21,7 +21,7 @@ async function initialize() {
     [provider.wallet.publicKey.toBuffer(), Buffer.from(ID)],
     program.programId
   );
-
+  
   let [tokenFaucetMintAddress, tokenFaucetMintBump] = await anchor.web3.PublicKey.findProgramAddress(
     [tokenFaucetAddress.toBuffer(), Buffer.from("faucet_mint")],
     program.programId
@@ -34,12 +34,11 @@ async function initialize() {
       tokenMint: tokenFaucetMintAddress,
       tokenProgram: spl.TOKEN_PROGRAM_ID,
       systemProgram: anchor.web3.SystemProgram.programId,
-      rent: anchor.web3.SYSVAR_RENT_PUBKEY,
-    })
+      rent: anchor.web3.SYSVAR_RENT_PUBKEY
+  })
     //.rpc({ skipPreflight: true, commitment: "confirmed" });
-    .rpc();
+  .rpc();
   let faucet = await program.account.tokenFaucet.fetch(tokenFaucetAddress);
   console.log("Faucet created", faucet)
-
 }
 initialize()
