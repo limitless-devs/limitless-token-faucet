@@ -1,6 +1,6 @@
 ## limitless-token-faucet
 
-This is a anchor smart contract to create and mint from token faucets. It is intended to be used for testing.
+This is a anchor smart contract to create and mint from token faucets. It is intended to be used for testing and thus only exists on devnet.
 
 ## Usage 
 
